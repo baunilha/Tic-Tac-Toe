@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar.LayoutParams;
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.view.MotionEvent;
@@ -59,7 +58,7 @@ public class DrawingView extends View implements OnTouchListener {
 	protected void onDraw(Canvas canvas){
 		// Set path style
 		paint.setAntiAlias(true);
-		paint.setColor(Color.BLACK);
+		paint.setARGB(255, 250, 128, 4);
 		paint.setStyle(Paint.Style.STROKE);
 		paint.setStrokeWidth(20f);
 		paint.setStrokeJoin(Paint.Join.ROUND);
